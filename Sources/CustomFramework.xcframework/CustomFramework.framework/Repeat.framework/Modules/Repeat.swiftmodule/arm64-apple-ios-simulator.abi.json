@@ -1,0 +1,2949 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Repeat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Debouncer",
+        "printedName": "Debouncer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delay",
+            "printedName": "delay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Interval",
+                "printedName": "Repeat.Repeater.Interval",
+                "usr": "s:6Repeat8RepeaterC8IntervalO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Repeat9DebouncerC5delayAA8RepeaterC8IntervalOvp",
+            "mangledName": "$s6Repeat9DebouncerC5delayAA8RepeaterC8IntervalOvp",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Interval",
+                    "printedName": "Repeat.Repeater.Interval",
+                    "usr": "s:6Repeat8RepeaterC8IntervalO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Repeat9DebouncerC5delayAA8RepeaterC8IntervalOvg",
+                "mangledName": "$s6Repeat9DebouncerC5delayAA8RepeaterC8IntervalOvg",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "callback",
+            "printedName": "callback",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Repeat9DebouncerC8callbackyycSgvp",
+            "mangledName": "$s6Repeat9DebouncerC8callbackyycSgvp",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Repeat9DebouncerC8callbackyycSgvg",
+                "mangledName": "$s6Repeat9DebouncerC8callbackyycSgvg",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Repeat9DebouncerC8callbackyycSgvs",
+                "mangledName": "$s6Repeat9DebouncerC8callbackyycSgvs",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Repeat9DebouncerC8callbackyycSgvM",
+                "mangledName": "$s6Repeat9DebouncerC8callbackyycSgvM",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Debouncer",
+                "printedName": "Repeat.Debouncer",
+                "usr": "s:6Repeat9DebouncerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Interval",
+                "printedName": "Repeat.Repeater.Interval",
+                "usr": "s:6Repeat8RepeaterC8IntervalO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6Repeat9DebouncerC_8callbackAcA8RepeaterC8IntervalO_yycSgtcfc",
+            "mangledName": "$s6Repeat9DebouncerC_8callbackAcA8RepeaterC8IntervalO_yycSgtcfc",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "call",
+            "printedName": "call(newDelay:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Repeat.Repeater.Interval?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Interval",
+                    "printedName": "Repeat.Repeater.Interval",
+                    "usr": "s:6Repeat8RepeaterC8IntervalO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat9DebouncerC4call8newDelayyAA8RepeaterC8IntervalOSg_tF",
+            "mangledName": "$s6Repeat9DebouncerC4call8newDelayyAA8RepeaterC8IntervalOSg_tF",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6Repeat9DebouncerC",
+        "mangledName": "$s6Repeat9DebouncerC",
+        "moduleName": "Repeat",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Repeat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Repeater",
+        "printedName": "Repeater",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "State",
+            "printedName": "State",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "paused",
+                "printedName": "paused",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.State.Type) -> Repeat.Repeater.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Repeat.Repeater.State",
+                        "usr": "s:6Repeat8RepeaterC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Repeat.Repeater.State",
+                            "usr": "s:6Repeat8RepeaterC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC5StateO6pausedyA2EmF",
+                "mangledName": "$s6Repeat8RepeaterC5StateO6pausedyA2EmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "running",
+                "printedName": "running",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.State.Type) -> Repeat.Repeater.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Repeat.Repeater.State",
+                        "usr": "s:6Repeat8RepeaterC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Repeat.Repeater.State",
+                            "usr": "s:6Repeat8RepeaterC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC5StateO7runningyA2EmF",
+                "mangledName": "$s6Repeat8RepeaterC5StateO7runningyA2EmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "executing",
+                "printedName": "executing",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.State.Type) -> Repeat.Repeater.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Repeat.Repeater.State",
+                        "usr": "s:6Repeat8RepeaterC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Repeat.Repeater.State",
+                            "usr": "s:6Repeat8RepeaterC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC5StateO9executingyA2EmF",
+                "mangledName": "$s6Repeat8RepeaterC5StateO9executingyA2EmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "finished",
+                "printedName": "finished",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.State.Type) -> Repeat.Repeater.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Repeat.Repeater.State",
+                        "usr": "s:6Repeat8RepeaterC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Repeat.Repeater.State",
+                            "usr": "s:6Repeat8RepeaterC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC5StateO8finishedyA2EmF",
+                "mangledName": "$s6Repeat8RepeaterC5StateO8finishedyA2EmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "Repeat.Repeater.State",
+                    "usr": "s:6Repeat8RepeaterC5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "Repeat.Repeater.State",
+                    "usr": "s:6Repeat8RepeaterC5StateO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:6Repeat8RepeaterC5StateO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s6Repeat8RepeaterC5StateO2eeoiySbAE_AEtFZ",
+                "moduleName": "Repeat",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "isRunning",
+                "printedName": "isRunning",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:6Repeat8RepeaterC5StateO9isRunningSbvp",
+                "mangledName": "$s6Repeat8RepeaterC5StateO9isRunningSbvp",
+                "moduleName": "Repeat",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:6Repeat8RepeaterC5StateO9isRunningSbvg",
+                    "mangledName": "$s6Repeat8RepeaterC5StateO9isRunningSbvg",
+                    "moduleName": "Repeat",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isExecuting",
+                "printedName": "isExecuting",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:6Repeat8RepeaterC5StateO11isExecutingSbvp",
+                "mangledName": "$s6Repeat8RepeaterC5StateO11isExecutingSbvp",
+                "moduleName": "Repeat",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:6Repeat8RepeaterC5StateO11isExecutingSbvg",
+                    "mangledName": "$s6Repeat8RepeaterC5StateO11isExecutingSbvg",
+                    "moduleName": "Repeat",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isFinished",
+                "printedName": "isFinished",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:6Repeat8RepeaterC5StateO10isFinishedSbvp",
+                "mangledName": "$s6Repeat8RepeaterC5StateO10isFinishedSbvp",
+                "moduleName": "Repeat",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:6Repeat8RepeaterC5StateO10isFinishedSbvg",
+                    "mangledName": "$s6Repeat8RepeaterC5StateO10isFinishedSbvg",
+                    "moduleName": "Repeat",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "description",
+                "printedName": "description",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:6Repeat8RepeaterC5StateO11descriptionSSvp",
+                "mangledName": "$s6Repeat8RepeaterC5StateO11descriptionSSvp",
+                "moduleName": "Repeat",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:6Repeat8RepeaterC5StateO11descriptionSSvg",
+                    "mangledName": "$s6Repeat8RepeaterC5StateO11descriptionSSvg",
+                    "moduleName": "Repeat",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:6Repeat8RepeaterC5StateO9hashValueSivp",
+                "mangledName": "$s6Repeat8RepeaterC5StateO9hashValueSivp",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:6Repeat8RepeaterC5StateO9hashValueSivg",
+                    "mangledName": "$s6Repeat8RepeaterC5StateO9hashValueSivg",
+                    "moduleName": "Repeat",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:6Repeat8RepeaterC5StateO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s6Repeat8RepeaterC5StateO4hash4intoys6HasherVz_tF",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:6Repeat8RepeaterC5StateO",
+            "mangledName": "$s6Repeat8RepeaterC5StateO",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Interval",
+            "printedName": "Interval",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "nanoseconds",
+                "printedName": "nanoseconds",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.Interval.Type) -> (Swift.Int) -> Repeat.Repeater.Interval",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> Repeat.Repeater.Interval",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.Interval.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC8IntervalO11nanosecondsyAESicAEmF",
+                "mangledName": "$s6Repeat8RepeaterC8IntervalO11nanosecondsyAESicAEmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "microseconds",
+                "printedName": "microseconds",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.Interval.Type) -> (Swift.Int) -> Repeat.Repeater.Interval",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> Repeat.Repeater.Interval",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.Interval.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC8IntervalO12microsecondsyAESicAEmF",
+                "mangledName": "$s6Repeat8RepeaterC8IntervalO12microsecondsyAESicAEmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "milliseconds",
+                "printedName": "milliseconds",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.Interval.Type) -> (Swift.Int) -> Repeat.Repeater.Interval",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> Repeat.Repeater.Interval",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.Interval.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC8IntervalO12millisecondsyAESicAEmF",
+                "mangledName": "$s6Repeat8RepeaterC8IntervalO12millisecondsyAESicAEmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "minutes",
+                "printedName": "minutes",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.Interval.Type) -> (Swift.Int) -> Repeat.Repeater.Interval",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> Repeat.Repeater.Interval",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.Interval.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC8IntervalO7minutesyAESicAEmF",
+                "mangledName": "$s6Repeat8RepeaterC8IntervalO7minutesyAESicAEmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "seconds",
+                "printedName": "seconds",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.Interval.Type) -> (Swift.Double) -> Repeat.Repeater.Interval",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Double) -> Repeat.Repeater.Interval",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.Interval.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC8IntervalO7secondsyAESdcAEmF",
+                "mangledName": "$s6Repeat8RepeaterC8IntervalO7secondsyAESdcAEmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "hours",
+                "printedName": "hours",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.Interval.Type) -> (Swift.Int) -> Repeat.Repeater.Interval",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> Repeat.Repeater.Interval",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.Interval.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC8IntervalO5hoursyAESicAEmF",
+                "mangledName": "$s6Repeat8RepeaterC8IntervalO5hoursyAESicAEmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "days",
+                "printedName": "days",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.Interval.Type) -> (Swift.Int) -> Repeat.Repeater.Interval",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> Repeat.Repeater.Interval",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.Interval.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Interval",
+                            "printedName": "Repeat.Repeater.Interval",
+                            "usr": "s:6Repeat8RepeaterC8IntervalO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC8IntervalO4daysyAESicAEmF",
+                "mangledName": "$s6Repeat8RepeaterC8IntervalO4daysyAESicAEmF",
+                "moduleName": "Repeat"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:6Repeat8RepeaterC8IntervalO",
+            "mangledName": "$s6Repeat8RepeaterC8IntervalO",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Mode",
+            "printedName": "Mode",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "infinite",
+                "printedName": "infinite",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.Mode.Type) -> Repeat.Repeater.Mode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Mode",
+                        "printedName": "Repeat.Repeater.Mode",
+                        "usr": "s:6Repeat8RepeaterC4ModeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.Mode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Mode",
+                            "printedName": "Repeat.Repeater.Mode",
+                            "usr": "s:6Repeat8RepeaterC4ModeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC4ModeO8infiniteyA2EmF",
+                "mangledName": "$s6Repeat8RepeaterC4ModeO8infiniteyA2EmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "finite",
+                "printedName": "finite",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.Mode.Type) -> (Swift.Int) -> Repeat.Repeater.Mode",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> Repeat.Repeater.Mode",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Mode",
+                            "printedName": "Repeat.Repeater.Mode",
+                            "usr": "s:6Repeat8RepeaterC4ModeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.Mode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Mode",
+                            "printedName": "Repeat.Repeater.Mode",
+                            "usr": "s:6Repeat8RepeaterC4ModeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC4ModeO6finiteyAESicAEmF",
+                "mangledName": "$s6Repeat8RepeaterC4ModeO6finiteyAESicAEmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "once",
+                "printedName": "once",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater.Mode.Type) -> Repeat.Repeater.Mode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Mode",
+                        "printedName": "Repeat.Repeater.Mode",
+                        "usr": "s:6Repeat8RepeaterC4ModeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Repeater.Mode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Mode",
+                            "printedName": "Repeat.Repeater.Mode",
+                            "usr": "s:6Repeat8RepeaterC4ModeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat8RepeaterC4ModeO4onceyA2EmF",
+                "mangledName": "$s6Repeat8RepeaterC4ModeO4onceyA2EmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "countIterations",
+                "printedName": "countIterations",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:6Repeat8RepeaterC4ModeO15countIterationsSiSgvp",
+                "mangledName": "$s6Repeat8RepeaterC4ModeO15countIterationsSiSgvp",
+                "moduleName": "Repeat",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:6Repeat8RepeaterC4ModeO15countIterationsSiSgvg",
+                    "mangledName": "$s6Repeat8RepeaterC4ModeO15countIterationsSiSgvg",
+                    "moduleName": "Repeat",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isInfinite",
+                "printedName": "isInfinite",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:6Repeat8RepeaterC4ModeO10isInfiniteSbvp",
+                "mangledName": "$s6Repeat8RepeaterC4ModeO10isInfiniteSbvp",
+                "moduleName": "Repeat",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:6Repeat8RepeaterC4ModeO10isInfiniteSbvg",
+                    "mangledName": "$s6Repeat8RepeaterC4ModeO10isInfiniteSbvg",
+                    "moduleName": "Repeat",
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:6Repeat8RepeaterC4ModeO",
+            "mangledName": "$s6Repeat8RepeaterC4ModeO",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "Repeat.Repeater.State",
+                "usr": "s:6Repeat8RepeaterC5StateO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Repeat8RepeaterC5stateAC5StateOvp",
+            "mangledName": "$s6Repeat8RepeaterC5stateAC5StateOvp",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "Repeat.Repeater.State",
+                    "usr": "s:6Repeat8RepeaterC5StateO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Repeat8RepeaterC5stateAC5StateOvg",
+                "mangledName": "$s6Repeat8RepeaterC5stateAC5StateOvg",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onStateChanged",
+            "printedName": "onStateChanged",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Repeat.Repeater, Repeat.Repeater.State) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Repeater, Repeat.Repeater.State) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Repeat.Repeater, Repeat.Repeater.State)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Repeater",
+                            "printedName": "Repeat.Repeater",
+                            "usr": "s:6Repeat8RepeaterC"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Repeat.Repeater.State",
+                            "usr": "s:6Repeat8RepeaterC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Repeat8RepeaterC14onStateChangedyAC_AC0D0OtcSgvp",
+            "mangledName": "$s6Repeat8RepeaterC14onStateChangedyAC_AC0D0OtcSgvp",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Repeat.Repeater, Repeat.Repeater.State) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Repeat.Repeater, Repeat.Repeater.State) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Repeat.Repeater, Repeat.Repeater.State)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Repeater",
+                                "printedName": "Repeat.Repeater",
+                                "usr": "s:6Repeat8RepeaterC"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "State",
+                                "printedName": "Repeat.Repeater.State",
+                                "usr": "s:6Repeat8RepeaterC5StateO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Repeat8RepeaterC14onStateChangedyAC_AC0D0OtcSgvg",
+                "mangledName": "$s6Repeat8RepeaterC14onStateChangedyAC_AC0D0OtcSgvg",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Repeat.Repeater, Repeat.Repeater.State) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Repeat.Repeater, Repeat.Repeater.State) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Repeat.Repeater, Repeat.Repeater.State)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Repeater",
+                                "printedName": "Repeat.Repeater",
+                                "usr": "s:6Repeat8RepeaterC"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "State",
+                                "printedName": "Repeat.Repeater.State",
+                                "usr": "s:6Repeat8RepeaterC5StateO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Repeat8RepeaterC14onStateChangedyAC_AC0D0OtcSgvs",
+                "mangledName": "$s6Repeat8RepeaterC14onStateChangedyAC_AC0D0OtcSgvs",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Repeat8RepeaterC14onStateChangedyAC_AC0D0OtcSgvM",
+                "mangledName": "$s6Repeat8RepeaterC14onStateChangedyAC_AC0D0OtcSgvM",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mode",
+            "printedName": "mode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Mode",
+                "printedName": "Repeat.Repeater.Mode",
+                "usr": "s:6Repeat8RepeaterC4ModeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Repeat8RepeaterC4modeAC4ModeOvp",
+            "mangledName": "$s6Repeat8RepeaterC4modeAC4ModeOvp",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Mode",
+                    "printedName": "Repeat.Repeater.Mode",
+                    "usr": "s:6Repeat8RepeaterC4ModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Repeat8RepeaterC4modeAC4ModeOvg",
+                "mangledName": "$s6Repeat8RepeaterC4modeAC4ModeOvg",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "remainingIterations",
+            "printedName": "remainingIterations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Repeat8RepeaterC19remainingIterationsSiSgvp",
+            "mangledName": "$s6Repeat8RepeaterC19remainingIterationsSiSgvp",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Repeat8RepeaterC19remainingIterationsSiSgvg",
+                "mangledName": "$s6Repeat8RepeaterC19remainingIterationsSiSgvg",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(interval:mode:tolerance:queue:observer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Repeater",
+                "printedName": "Repeat.Repeater",
+                "usr": "s:6Repeat8RepeaterC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Interval",
+                "printedName": "Repeat.Repeater.Interval",
+                "usr": "s:6Repeat8RepeaterC8IntervalO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Mode",
+                "printedName": "Repeat.Repeater.Mode",
+                "hasDefaultArg": true,
+                "usr": "s:6Repeat8RepeaterC4ModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchTimeInterval",
+                "printedName": "Dispatch.DispatchTimeInterval",
+                "hasDefaultArg": true,
+                "usr": "s:8Dispatch0A12TimeIntervalO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Repeat.Repeater) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Repeater",
+                    "printedName": "Repeat.Repeater",
+                    "usr": "s:6Repeat8RepeaterC"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6Repeat8RepeaterC8interval4mode9tolerance5queue8observerA2C8IntervalO_AC4ModeO8Dispatch0j4TimeH0OSo012OS_dispatch_F0CSgyACctcfc",
+            "mangledName": "$s6Repeat8RepeaterC8interval4mode9tolerance5queue8observerA2C8IntervalO_AC4ModeO8Dispatch0j4TimeH0OSo012OS_dispatch_F0CSgyACctcfc",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "observe",
+            "printedName": "observe(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Repeat.Repeater) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Repeater",
+                    "printedName": "Repeat.Repeater",
+                    "usr": "s:6Repeat8RepeaterC"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat8RepeaterC7observeys6UInt64VyACcF",
+            "mangledName": "$s6Repeat8RepeaterC7observeys6UInt64VyACcF",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remove",
+            "printedName": "remove(observer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat8RepeaterC6remove8observerys6UInt64V_tF",
+            "mangledName": "$s6Repeat8RepeaterC6remove8observerys6UInt64V_tF",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllObservers",
+            "printedName": "removeAllObservers(thenStop:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat8RepeaterC18removeAllObservers8thenStopySb_tF",
+            "mangledName": "$s6Repeat8RepeaterC18removeAllObservers8thenStopySb_tF",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "once",
+            "printedName": "once(after:tolerance:queue:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Repeater",
+                "printedName": "Repeat.Repeater",
+                "usr": "s:6Repeat8RepeaterC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Interval",
+                "printedName": "Repeat.Repeater.Interval",
+                "usr": "s:6Repeat8RepeaterC8IntervalO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchTimeInterval",
+                "printedName": "Dispatch.DispatchTimeInterval",
+                "hasDefaultArg": true,
+                "usr": "s:8Dispatch0A12TimeIntervalO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Repeat.Repeater) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Repeater",
+                    "printedName": "Repeat.Repeater",
+                    "usr": "s:6Repeat8RepeaterC"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat8RepeaterC4once5after9tolerance5queue_A2C8IntervalO_8Dispatch0h4TimeG0OSo012OS_dispatch_F0CSgyACctFZ",
+            "mangledName": "$s6Repeat8RepeaterC4once5after9tolerance5queue_A2C8IntervalO_8Dispatch0h4TimeG0OSo012OS_dispatch_F0CSgyACctFZ",
+            "moduleName": "Repeat",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "every",
+            "printedName": "every(_:count:tolerance:queue:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Repeater",
+                "printedName": "Repeat.Repeater",
+                "usr": "s:6Repeat8RepeaterC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Interval",
+                "printedName": "Repeat.Repeater.Interval",
+                "usr": "s:6Repeat8RepeaterC8IntervalO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchTimeInterval",
+                "printedName": "Dispatch.DispatchTimeInterval",
+                "hasDefaultArg": true,
+                "usr": "s:8Dispatch0A12TimeIntervalO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Repeat.Repeater) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Repeater",
+                    "printedName": "Repeat.Repeater",
+                    "usr": "s:6Repeat8RepeaterC"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat8RepeaterC5every_5count9tolerance5queue_A2C8IntervalO_SiSg8Dispatch0h4TimeG0OSo012OS_dispatch_F0CSgyACctFZ",
+            "mangledName": "$s6Repeat8RepeaterC5every_5count9tolerance5queue_A2C8IntervalO_SiSg8Dispatch0h4TimeG0OSo012OS_dispatch_F0CSgyACctFZ",
+            "moduleName": "Repeat",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fire",
+            "printedName": "fire(andPause:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat8RepeaterC4fire8andPauseySb_tF",
+            "mangledName": "$s6Repeat8RepeaterC4fire8andPauseySb_tF",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset(_:restart:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Repeat.Repeater.Interval?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Interval",
+                    "printedName": "Repeat.Repeater.Interval",
+                    "usr": "s:6Repeat8RepeaterC8IntervalO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat8RepeaterC5reset_7restartyAC8IntervalOSg_SbtF",
+            "mangledName": "$s6Repeat8RepeaterC5reset_7restartyAC8IntervalOSg_SbtF",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat8RepeaterC5startSbyF",
+            "mangledName": "$s6Repeat8RepeaterC5startSbyF",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat8RepeaterC5pauseSbyF",
+            "mangledName": "$s6Repeat8RepeaterC5pauseSbyF",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Repeater",
+                "printedName": "Repeat.Repeater",
+                "usr": "s:6Repeat8RepeaterC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Repeater",
+                "printedName": "Repeat.Repeater",
+                "usr": "s:6Repeat8RepeaterC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat8RepeaterC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s6Repeat8RepeaterC2eeoiySbAC_ACtFZ",
+            "moduleName": "Repeat",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6Repeat8RepeaterC",
+        "mangledName": "$s6Repeat8RepeaterC",
+        "moduleName": "Repeat",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Repeat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Throttler",
+        "printedName": "Throttler",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Mode",
+            "printedName": "Mode",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "fixed",
+                "printedName": "fixed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Throttler.Mode.Type) -> Repeat.Throttler.Mode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Mode",
+                        "printedName": "Repeat.Throttler.Mode",
+                        "usr": "s:6Repeat9ThrottlerC4ModeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Throttler.Mode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Mode",
+                            "printedName": "Repeat.Throttler.Mode",
+                            "usr": "s:6Repeat9ThrottlerC4ModeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat9ThrottlerC4ModeO5fixedyA2EmF",
+                "mangledName": "$s6Repeat9ThrottlerC4ModeO5fixedyA2EmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Var",
+                "name": "deferred",
+                "printedName": "deferred",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Repeat.Throttler.Mode.Type) -> Repeat.Throttler.Mode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Mode",
+                        "printedName": "Repeat.Throttler.Mode",
+                        "usr": "s:6Repeat9ThrottlerC4ModeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Repeat.Throttler.Mode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Mode",
+                            "printedName": "Repeat.Throttler.Mode",
+                            "usr": "s:6Repeat9ThrottlerC4ModeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:6Repeat9ThrottlerC4ModeO8deferredyA2EmF",
+                "mangledName": "$s6Repeat9ThrottlerC4ModeO8deferredyA2EmF",
+                "moduleName": "Repeat"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Mode",
+                    "printedName": "Repeat.Throttler.Mode",
+                    "usr": "s:6Repeat9ThrottlerC4ModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Mode",
+                    "printedName": "Repeat.Throttler.Mode",
+                    "usr": "s:6Repeat9ThrottlerC4ModeO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:6Repeat9ThrottlerC4ModeO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s6Repeat9ThrottlerC4ModeO2eeoiySbAE_AEtFZ",
+                "moduleName": "Repeat",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:6Repeat9ThrottlerC4ModeO9hashValueSivp",
+                "mangledName": "$s6Repeat9ThrottlerC4ModeO9hashValueSivp",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:6Repeat9ThrottlerC4ModeO9hashValueSivg",
+                    "mangledName": "$s6Repeat9ThrottlerC4ModeO9hashValueSivg",
+                    "moduleName": "Repeat",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:6Repeat9ThrottlerC4ModeO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s6Repeat9ThrottlerC4ModeO4hash4intoys6HasherVz_tF",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:6Repeat9ThrottlerC4ModeO",
+            "mangledName": "$s6Repeat9ThrottlerC4ModeO",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "throttle",
+            "printedName": "throttle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchTimeInterval",
+                "printedName": "Dispatch.DispatchTimeInterval",
+                "usr": "s:8Dispatch0A12TimeIntervalO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Repeat9ThrottlerC8throttle8Dispatch0D12TimeIntervalOvp",
+            "mangledName": "$s6Repeat9ThrottlerC8throttle8Dispatch0D12TimeIntervalOvp",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchTimeInterval",
+                    "printedName": "Dispatch.DispatchTimeInterval",
+                    "usr": "s:8Dispatch0A12TimeIntervalO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Repeat9ThrottlerC8throttle8Dispatch0D12TimeIntervalOvg",
+                "mangledName": "$s6Repeat9ThrottlerC8throttle8Dispatch0D12TimeIntervalOvg",
+                "moduleName": "Repeat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(time:queue:mode:immediateFire:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Throttler",
+                "printedName": "Repeat.Throttler",
+                "usr": "s:6Repeat9ThrottlerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Interval",
+                "printedName": "Repeat.Repeater.Interval",
+                "usr": "s:6Repeat8RepeaterC8IntervalO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Mode",
+                "printedName": "Repeat.Throttler.Mode",
+                "hasDefaultArg": true,
+                "usr": "s:6Repeat9ThrottlerC4ModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6Repeat9ThrottlerC4time5queue4mode13immediateFire_AcA8RepeaterC8IntervalO_So012OS_dispatch_D0CSgAC4ModeOSbyycSgtcfc",
+            "mangledName": "$s6Repeat9ThrottlerC4time5queue4mode13immediateFire_AcA8RepeaterC8IntervalO_So012OS_dispatch_D0CSgAC4ModeOSbyycSgtcfc",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "call",
+            "printedName": "call()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Repeat9ThrottlerC4callyyF",
+            "mangledName": "$s6Repeat9ThrottlerC4callyyF",
+            "moduleName": "Repeat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6Repeat9ThrottlerC",
+        "mangledName": "$s6Repeat9ThrottlerC",
+        "moduleName": "Repeat",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Debouncer.swift",
+      "kind": "StringLiteral",
+      "offset": 2736,
+      "length": 39,
+      "value": "\"Debouncer fired but callback not set.\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Debouncer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2869,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1963,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1991,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2200,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2218,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2364,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2382,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2699,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2717,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "StringLiteral",
+      "offset": 2827,
+      "length": 13,
+      "value": "\"idle\/paused\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "StringLiteral",
+      "offset": 2867,
+      "length": 10,
+      "value": "\"finished\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "StringLiteral",
+      "offset": 2903,
+      "length": 9,
+      "value": "\"running\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "StringLiteral",
+      "offset": 2940,
+      "length": 11,
+      "value": "\"executing\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3514,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3577,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3635,
+      "length": 4,
+      "value": "3600"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3694,
+      "length": 5,
+      "value": "86400"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4036,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4061,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4371,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4392,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4994,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5854,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "StringLiteral",
+      "offset": 6090,
+      "length": 18,
+      "value": "\"com.repeat.queue\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6485,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6596,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6607,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7084,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "StringLiteral",
+      "offset": 7347,
+      "length": 35,
+      "value": "\"com.repeat.\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "StringLiteral",
+      "offset": 7381,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8531,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9320,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9777,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9819,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10197,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10851,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10874,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11017,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11088,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11212,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11227,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11415,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11942,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12011,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12171,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Repeater.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12592,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Throttler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2380,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Throttler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2952,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Throttler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3413,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/Pods\/Repeat\/Sources\/Repeat\/Throttler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3564,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}

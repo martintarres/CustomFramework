@@ -1,0 +1,345 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CoreServices_iOS
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreData
+@_exported import CoreServices_iOS
+import Foundation
+import KeychainAccess
+import Swift
+import SwiftJWT
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol BackgroundNetworkManager {
+  static func setCompletionHandler(id: Swift.String, _ completion: @escaping CoreServices_iOS.BackgroundCompletionHandler)
+  var environment: CoreServices_iOS.NetworkEnvironment { get set }
+  var delegate: (any CoreServices_iOS.BackgroundNetworkManagerDelegate)? { get set }
+  var keychain: any CoreServices_iOS.KeychainManager { get }
+  func upload(fileURL: Foundation.URL, endpoint: any CoreServices_iOS.Endpoint, allowsCellularAccess: Swift.Bool) throws -> any CoreServices_iOS.NetworkManagerSessionTask
+  func download(endpoint: any CoreServices_iOS.Endpoint) throws -> any CoreServices_iOS.NetworkManagerSessionTask
+  func isUploading(networkManagerSessionTaskIdentifiers: [Swift.Int], completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  func cancel(networkManagerSessionTaskIdentifiers: [Swift.Int], completionHandler: @escaping () -> Swift.Void)
+}
+public protocol BackgroundNetworkManagerDelegate : AnyObject {
+  func didComplete(task: any CoreServices_iOS.NetworkManagerSessionTask)
+  func didFail(task: any CoreServices_iOS.NetworkManagerSessionTask, with error: CoreServices_iOS.NetworkError)
+  func didCompleteDownload(task: any CoreServices_iOS.NetworkManagerSessionTask, data: Foundation.Data)
+}
+public class CoreDataStore : CoreServices_iOS.DataStore {
+  public init(storeName: Swift.String, modelName: Swift.String, bundle: Foundation.Bundle = Bundle.main) throws
+  @objc deinit
+  public func fetch<T>(queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T?, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  public func fetch<T>(predicate: Foundation.NSPredicate? = nil, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<[T], CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func fetch<T>(predicate: Foundation.NSPredicate? = nil, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func fetch<T>(objectId: Swift.String, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func fetch<T>(defaultObject: T, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  public func save<T>(_ object: T, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  public func save<T>(_ object: T, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func saveAll<T>(_ objects: [T], queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<[T], CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func update<T>(objectId: Swift.String, queue: Dispatch.DispatchQueue, updateBlock: @escaping (inout T) -> (), completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func delete<T>(_ object: T, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T?, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  public func delete<T>(predicate: Foundation.NSPredicate?, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<[T], CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func delete<T>(_ object: T, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T?, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func delete<T>(objectId: Swift.String, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+}
+@_hasMissingDesignatedInitializers public class CoreServices {
+  public static let shared: CoreServices_iOS.CoreServices
+  public func start(settings: CoreServices_iOS.CoreServices.Settings)
+  @objc deinit
+}
+extension CoreServices_iOS.CoreServices {
+  public struct Settings {
+    public var bundleId: Swift.String?
+    public var baseURL: Swift.String?
+    public var jwtPublicKey: Swift.String?
+    public init(bundleId: Swift.String?, baseURL: Swift.String?, jwtPublicKey: Swift.String?)
+  }
+}
+public enum DataStoreError : Swift.Error {
+  case databaseNotFound
+  case entityNotFound
+  case objectNotFound
+  case saveFailed
+  case updateFailed
+  public static func == (a: CoreServices_iOS.DataStoreError, b: CoreServices_iOS.DataStoreError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol DataStore {
+  func fetch<T>(queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T?, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  func fetch<T>(predicate: Foundation.NSPredicate?, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<[T], CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  func fetch<T>(predicate: Foundation.NSPredicate?, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  func fetch<T>(objectId: Swift.String, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  func fetch<T>(defaultObject: T, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  func save<T>(_ object: T, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  func save<T>(_ object: T, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  func saveAll<T>(_ objects: [T], queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<[T], CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  func update<T>(objectId: Swift.String, queue: Dispatch.DispatchQueue, updateBlock: @escaping (inout T) -> (), completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  func delete<T>(_ object: T, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T?, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  func delete<T>(predicate: Foundation.NSPredicate?, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<[T], CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  func delete<T>(_ object: T, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T?, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  func delete<T>(objectId: Swift.String, queue: Dispatch.DispatchQueue, completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+}
+extension CoreServices_iOS.DataStore {
+  public func fetch<T>(queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<T?, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  public func fetch<T>(predicate: Foundation.NSPredicate? = nil, queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<[T], CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func fetch<T>(predicate: Foundation.NSPredicate? = nil, queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func fetch<T>(objectId: Swift.String, queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func fetch<T>(defaultObject: T, queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  public func save<T>(_ object: T, queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  public func save<T>(_ object: T, queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func saveAll<T>(_ objects: [T], queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<[T], CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func update<T>(objectId: Swift.String, queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), updateBlock: @escaping (inout T) -> (), completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func delete<T>(_ object: T, queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<T?, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.SinglePersistable
+  public func delete<T>(predicate: Foundation.NSPredicate?, queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<[T], CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func delete<T>(_ object: T, queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<T?, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+  public func delete<T>(objectId: Swift.String, queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .background), completionHandler: @escaping (Swift.Result<T, CoreServices_iOS.DataStoreError>) -> Swift.Void) where T : CoreServices_iOS.MultiPersistable
+}
+public enum ParametersEncoding {
+  case url
+  case json
+  public static func == (a: CoreServices_iOS.ParametersEncoding, b: CoreServices_iOS.ParametersEncoding) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum AuthorizationType {
+  case none
+  case bearer
+  case sas
+  public static func == (a: CoreServices_iOS.AuthorizationType, b: CoreServices_iOS.AuthorizationType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol Endpoint {
+  var baseURL: Foundation.URL { get }
+  var path: Swift.String { get }
+  var name: Swift.String? { get }
+  var httpMethod: CoreServices_iOS.HTTPMethod { get }
+  var requiresAuth: CoreServices_iOS.AuthorizationType { get }
+  var parameters: [Swift.String : Any]? { get }
+  var headers: [Swift.String : Swift.String]? { get }
+  var parametersEncoding: CoreServices_iOS.ParametersEncoding { get }
+  var body: Foundation.Data? { get }
+}
+extension CoreServices_iOS.Endpoint {
+  public var baseURL: Foundation.URL {
+    get
+  }
+  public var body: Foundation.Data? {
+    get
+  }
+}
+public enum HTTPMethod : Swift.String {
+  case get
+  case post
+  case put
+  case patch
+  case delete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class ImageDownloader {
+  public static let shared: CoreServices_iOS.ImageDownloader
+  public func start(memoryCapacity: Swift.Int = 500*1024*1024, diskCapacity: Swift.Int = 500*1024*1024, diskPath: Swift.String = "cached-images")
+  public func fetchImage(fromURL imageURL: Swift.String, completion: ((UIKit.UIImage?) -> ())?)
+  public func fetchImage(fromURL imageURL: Foundation.URL, completion: ((UIKit.UIImage?) -> ())?)
+  public func removeCachedImage(withURL imageURL: Swift.String)
+  @objc deinit
+}
+public enum KeychainManagerItem : Swift.String {
+  case sessionToken
+  case refreshToken
+  case sasToken
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol KeychainManager {
+  func store(item: CoreServices_iOS.KeychainManagerItem, string: Swift.String)
+  func load(item: CoreServices_iOS.KeychainManagerItem) -> Swift.String?
+  func remove(item: CoreServices_iOS.KeychainManagerItem)
+}
+public class MemoryKeychainManager : CoreServices_iOS.KeychainManager {
+  public init()
+  public func store(item: CoreServices_iOS.KeychainManagerItem, string: Swift.String)
+  public func load(item: CoreServices_iOS.KeychainManagerItem) -> Swift.String?
+  public func remove(item: CoreServices_iOS.KeychainManagerItem)
+  @objc deinit
+}
+public struct NetworkEnvironment {
+  public var name: Swift.String
+  public var host: Foundation.URL
+  public var headers: [Swift.String : Swift.String]
+  public var cachePolicy: Foundation.URLRequest.CachePolicy
+  public let stub: Swift.Bool
+  public init(name: Swift.String, host: Foundation.URL)
+}
+extension CoreServices_iOS.NetworkEnvironment {
+  public static func stubEnvironment(for name: Swift.String) -> CoreServices_iOS.NetworkEnvironment
+  public static var defaultEnvironment: CoreServices_iOS.NetworkEnvironment {
+    get
+  }
+}
+public enum NetworkError : Swift.Error {
+  case unknown
+  case noJSONData
+  case parseData
+  case badRequest
+  case unauthorized
+  case forbidden
+  case notFound
+  case clientFault
+  case serverFault
+  case refreshToken
+  case noNetwork
+  case noError
+  public static func == (a: CoreServices_iOS.NetworkError, b: CoreServices_iOS.NetworkError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct NetworkErrorDetail<T> : Swift.Error {
+  public let error: CoreServices_iOS.NetworkError
+  public let detail: T?
+}
+public protocol NetworkManagerSession {
+  typealias DataTaskResult = (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()
+  func dataTask(request: Foundation.URLRequest, completionHandler: @escaping Self.DataTaskResult) -> any CoreServices_iOS.NetworkManagerSessionTask
+}
+public protocol NetworkManagerSessionTask {
+  var identifier: Swift.Int { get }
+  var beginDate: Foundation.Date? { get set }
+  func resumeTask()
+}
+extension Foundation.NSNotification.Name {
+  public static let refreshTokenFailed: Foundation.Notification.Name
+}
+public protocol ParamsInfo {
+  var dictionary: [Swift.String : Any] { get }
+}
+public protocol Persistable {
+  associatedtype ManagedObject : CoreData.NSManagedObject
+  static var entityName: Swift.String { get }
+  init(_ managedObject: Self.ManagedObject)
+  func fill(_ managedObject: Self.ManagedObject)
+}
+public protocol SinglePersistable : CoreServices_iOS.Persistable {
+}
+public protocol MultiPersistable : CoreServices_iOS.Persistable {
+  static var idName: Swift.String { get }
+  var id: Swift.String { get }
+}
+public class SecureKeychainManager : CoreServices_iOS.KeychainManager {
+  public init()
+  public func store(item: CoreServices_iOS.KeychainManagerItem, string: Swift.String)
+  public func load(item: CoreServices_iOS.KeychainManagerItem) -> Swift.String?
+  public func remove(item: CoreServices_iOS.KeychainManagerItem)
+  @objc deinit
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func setImage(withURL url: Foundation.URL, placeholderImage: UIKit.UIImage? = nil)
+  @_Concurrency.MainActor(unsafe) public func setImage(withURL url: Swift.String, placeholderImage: UIKit.UIImage? = nil)
+}
+public typealias BackgroundCompletionHandler = (() -> Swift.Void)
+@objc public class URLBackgroundSessionNetworkManager : ObjectiveC.NSObject, CoreServices_iOS.BackgroundNetworkManager {
+  public enum Error : Swift.Error {
+    case unableToBuildURL
+    public static func == (a: CoreServices_iOS.URLBackgroundSessionNetworkManager.Error, b: CoreServices_iOS.URLBackgroundSessionNetworkManager.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum TimeoutPolicy {
+    case short
+    case long
+    public static func == (a: CoreServices_iOS.URLBackgroundSessionNetworkManager.TimeoutPolicy, b: CoreServices_iOS.URLBackgroundSessionNetworkManager.TimeoutPolicy) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var environment: CoreServices_iOS.NetworkEnvironment
+  public var session: Foundation.URLSession!
+  public var keychain: any CoreServices_iOS.KeychainManager
+  weak public var delegate: (any CoreServices_iOS.BackgroundNetworkManagerDelegate)?
+  public init(backgroundId: Swift.String, environment: CoreServices_iOS.NetworkEnvironment, timeoutPolicy: CoreServices_iOS.URLBackgroundSessionNetworkManager.TimeoutPolicy, keychain: any CoreServices_iOS.KeychainManager = MemoryKeychainManager())
+  public static func setCompletionHandler(id: Swift.String, _ completion: @escaping CoreServices_iOS.BackgroundCompletionHandler)
+  public static func clearCompletionHandler(id: Swift.String)
+  public func download(endpoint: any CoreServices_iOS.Endpoint) throws -> any CoreServices_iOS.NetworkManagerSessionTask
+  public func upload(fileURL: Foundation.URL, endpoint: any CoreServices_iOS.Endpoint, allowsCellularAccess: Swift.Bool) throws -> any CoreServices_iOS.NetworkManagerSessionTask
+  public func cancel(networkManagerSessionTaskIdentifiers: [Swift.Int], completionHandler: @escaping () -> Swift.Void)
+  public func isUploading(networkManagerSessionTaskIdentifiers: [Swift.Int], completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  @objc deinit
+}
+extension CoreServices_iOS.URLBackgroundSessionNetworkManager : Foundation.URLSessionDataDelegate {
+  @objc dynamic public func urlSessionDidFinishEvents(forBackgroundURLSession session: Foundation.URLSession)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+}
+extension CoreServices_iOS.URLBackgroundSessionNetworkManager : Foundation.URLSessionDownloadDelegate {
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, downloadTask: Foundation.URLSessionDownloadTask, didFinishDownloadingTo location: Foundation.URL)
+}
+extension Foundation.URLComponents {
+  public init(endpoint: any CoreServices_iOS.Endpoint)
+}
+extension Foundation.URLRequest {
+  public init(endpoint: any CoreServices_iOS.Endpoint)
+  public func fullDescription() -> Swift.String
+}
+extension Foundation.URLSession : CoreServices_iOS.NetworkManagerSession {
+  public func dataTask(request: Foundation.URLRequest, completionHandler: @escaping Foundation.URLSession.DataTaskResult) -> any CoreServices_iOS.NetworkManagerSessionTask
+}
+extension Foundation.URLSessionTask : CoreServices_iOS.NetworkManagerSessionTask {
+  public var identifier: Swift.Int {
+    get
+  }
+  public var beginDate: Foundation.Date? {
+    get
+    set
+  }
+  public func resumeTask()
+}
+final public class URLSessionNetworkManager {
+  final public var environment: CoreServices_iOS.NetworkEnvironment
+  final public var session: any CoreServices_iOS.NetworkManagerSession
+  public init(session: any CoreServices_iOS.NetworkManagerSession = URLSession.shared, environment: CoreServices_iOS.NetworkEnvironment = NetworkEnvironment.defaultEnvironment, keychain: any CoreServices_iOS.KeychainManager = SecureKeychainManager())
+  final public func request<T>(type: T.Type, endpoint: any CoreServices_iOS.Endpoint, completion: @escaping (Swift.Result<T, CoreServices_iOS.NetworkError>) -> ()) where T : Swift.Decodable
+  final public func request(endpoint: any CoreServices_iOS.Endpoint, completion: @escaping (Swift.Result<Swift.Void, CoreServices_iOS.NetworkError>) -> ())
+  final public func request<T, U>(type: T.Type, endpoint: any CoreServices_iOS.Endpoint, completion: @escaping (Swift.Result<T, CoreServices_iOS.NetworkErrorDetail<U>>) -> ()) where T : Swift.Decodable, U : Swift.Decodable
+  final public func request<U>(endpoint: any CoreServices_iOS.Endpoint, completion: @escaping (Swift.Result<Swift.Void, CoreServices_iOS.NetworkErrorDetail<U>>) -> ()) where U : Swift.Decodable
+  final public func request<U>(endpoint: any CoreServices_iOS.Endpoint, completion: @escaping (Swift.Result<Foundation.Data?, CoreServices_iOS.NetworkErrorDetail<U>>) -> ()) where U : Swift.Decodable
+  @objc deinit
+}
+extension CoreServices_iOS.DataStoreError : Swift.Equatable {}
+extension CoreServices_iOS.DataStoreError : Swift.Hashable {}
+extension CoreServices_iOS.ParametersEncoding : Swift.Equatable {}
+extension CoreServices_iOS.ParametersEncoding : Swift.Hashable {}
+extension CoreServices_iOS.AuthorizationType : Swift.Equatable {}
+extension CoreServices_iOS.AuthorizationType : Swift.Hashable {}
+extension CoreServices_iOS.HTTPMethod : Swift.Equatable {}
+extension CoreServices_iOS.HTTPMethod : Swift.Hashable {}
+extension CoreServices_iOS.HTTPMethod : Swift.RawRepresentable {}
+extension CoreServices_iOS.KeychainManagerItem : Swift.Equatable {}
+extension CoreServices_iOS.KeychainManagerItem : Swift.Hashable {}
+extension CoreServices_iOS.KeychainManagerItem : Swift.RawRepresentable {}
+extension CoreServices_iOS.NetworkError : Swift.Equatable {}
+extension CoreServices_iOS.NetworkError : Swift.Hashable {}
+extension CoreServices_iOS.URLBackgroundSessionNetworkManager.Error : Swift.Equatable {}
+extension CoreServices_iOS.URLBackgroundSessionNetworkManager.Error : Swift.Hashable {}
+extension CoreServices_iOS.URLBackgroundSessionNetworkManager.TimeoutPolicy : Swift.Equatable {}
+extension CoreServices_iOS.URLBackgroundSessionNetworkManager.TimeoutPolicy : Swift.Hashable {}

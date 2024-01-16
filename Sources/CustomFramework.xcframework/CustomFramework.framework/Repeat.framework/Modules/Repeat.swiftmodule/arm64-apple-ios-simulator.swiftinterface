@@ -1,0 +1,115 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 effective-4.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios8.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name Repeat
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import Repeat
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+open class Debouncer {
+  public typealias Callback = (() -> Swift.Void)
+  public var delay: Repeat.Repeater.Interval {
+    get
+  }
+  public var callback: Repeat.Debouncer.Callback?
+  public init(_ delay: Repeat.Repeater.Interval, callback: Repeat.Debouncer.Callback? = nil)
+  public func call(newDelay: Repeat.Repeater.Interval? = nil)
+  @objc deinit
+}
+open class Repeater : Swift.Equatable {
+  public enum State : Swift.Equatable, Swift.CustomStringConvertible {
+    case paused
+    case running
+    case executing
+    case finished
+    public static func == (lhs: Repeat.Repeater.State, rhs: Repeat.Repeater.State) -> Swift.Bool
+    public var isRunning: Swift.Bool {
+      get
+    }
+    public var isExecuting: Swift.Bool {
+      get
+    }
+    public var isFinished: Swift.Bool {
+      get
+    }
+    public var description: Swift.String {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Interval {
+    case nanoseconds(Swift.Int)
+    case microseconds(Swift.Int)
+    case milliseconds(Swift.Int)
+    case minutes(Swift.Int)
+    case seconds(Swift.Double)
+    case hours(Swift.Int)
+    case days(Swift.Int)
+  }
+  public enum Mode {
+    case infinite
+    case finite(Swift.Int)
+    case once
+    public var countIterations: Swift.Int? {
+      get
+    }
+    public var isInfinite: Swift.Bool {
+      get
+    }
+  }
+  public typealias Observer = ((Repeat.Repeater) -> Swift.Void)
+  public typealias ObserverToken = Swift.UInt64
+  public var state: Repeat.Repeater.State {
+    get
+  }
+  public var onStateChanged: ((_ timer: Repeat.Repeater, _ state: Repeat.Repeater.State) -> Swift.Void)?
+  public var mode: Repeat.Repeater.Mode {
+    get
+  }
+  public var remainingIterations: Swift.Int? {
+    get
+  }
+  public init(interval: Repeat.Repeater.Interval, mode: Repeat.Repeater.Mode = .infinite, tolerance: Dispatch.DispatchTimeInterval = .nanoseconds(0), queue: Dispatch.DispatchQueue? = nil, observer: @escaping Repeat.Repeater.Observer)
+  @discardableResult
+  public func observe(_ observer: @escaping Repeat.Repeater.Observer) -> Repeat.Repeater.ObserverToken
+  public func remove(observer identifier: Repeat.Repeater.ObserverToken)
+  public func removeAllObservers(thenStop stopTimer: Swift.Bool = false)
+  @discardableResult
+  public class func once(after interval: Repeat.Repeater.Interval, tolerance: Dispatch.DispatchTimeInterval = .nanoseconds(0), queue: Dispatch.DispatchQueue? = nil, _ observer: @escaping Repeat.Repeater.Observer) -> Repeat.Repeater
+  @discardableResult
+  public class func every(_ interval: Repeat.Repeater.Interval, count: Swift.Int? = nil, tolerance: Dispatch.DispatchTimeInterval = .nanoseconds(0), queue: Dispatch.DispatchQueue? = nil, _ handler: @escaping Repeat.Repeater.Observer) -> Repeat.Repeater
+  public func fire(andPause pause: Swift.Bool = false)
+  public func reset(_ interval: Repeat.Repeater.Interval?, restart: Swift.Bool = true)
+  @discardableResult
+  public func start() -> Swift.Bool
+  @discardableResult
+  public func pause() -> Swift.Bool
+  @objc deinit
+  public static func == (lhs: Repeat.Repeater, rhs: Repeat.Repeater) -> Swift.Bool
+}
+open class Throttler {
+  public typealias Callback = (() -> Swift.Void)
+  public enum Mode {
+    case fixed
+    case deferred
+    public static func == (a: Repeat.Throttler.Mode, b: Repeat.Throttler.Mode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var throttle: Dispatch.DispatchTimeInterval {
+    get
+  }
+  public init(time: Repeat.Repeater.Interval, queue: Dispatch.DispatchQueue? = nil, mode: Repeat.Throttler.Mode = .fixed, immediateFire: Swift.Bool = false, _ callback: Repeat.Throttler.Callback? = nil)
+  public func call()
+  @objc deinit
+}
+extension Repeat.Repeater.State : Swift.Hashable {}
+extension Repeat.Throttler.Mode : Swift.Equatable {}
+extension Repeat.Throttler.Mode : Swift.Hashable {}
