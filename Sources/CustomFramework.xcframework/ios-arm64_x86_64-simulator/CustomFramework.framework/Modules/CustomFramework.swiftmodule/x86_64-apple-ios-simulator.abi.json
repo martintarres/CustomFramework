@@ -15,14 +15,28 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "CoreServices_iOS",
+        "printedName": "CoreServices_iOS",
+        "declKind": "Import",
+        "moduleName": "CustomFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "TututuSDK",
+        "printedName": "TututuSDK",
+        "declKind": "Import",
+        "moduleName": "CustomFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "SDK",
         "printedName": "SDK",
         "children": [
           {
             "kind": "Function",
-            "name": "configure",
-            "printedName": "configure(apiKey:)",
+            "name": "initSdk",
+            "printedName": "initSdk(userId:vehicleId:subscriptionId:applicationId:token:env:deploy:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -31,35 +45,68 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15CustomFramework3SDKV9configure6apiKeyySS_tFZ",
-            "mangledName": "$s15CustomFramework3SDKV9configure6apiKeyySS_tFZ",
-            "moduleName": "CustomFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "doSomeWork",
-            "printedName": "doSomeWork()",
-            "children": [
+              },
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15CustomFramework3SDKV10doSomeWorkyyFZ",
-            "mangledName": "$s15CustomFramework3SDKV10doSomeWorkyyFZ",
+            "usr": "s:15CustomFramework3SDKV7initSdk6userId07vehicleG0012subscriptionG0011applicationG05token3env6deployySi_SiS4SSgALtFZ",
+            "mangledName": "$s15CustomFramework3SDKV7initSdk6userId07vehicleG0012subscriptionG0011applicationG05token3env6deployySi_SiS4SSgALtFZ",
             "moduleName": "CustomFramework",
             "static": true,
             "declAttributes": [
@@ -82,31 +129,38 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 165,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
-      "kind": "Array",
-      "offset": 209,
-      "length": 31,
-      "value": "[\"privateKey123\"]"
+      "kind": "StringLiteral",
+      "offset": 1028,
+      "length": 37,
+      "value": "\"https:\/\/bephp-dev.tututu.app\/api\/v1\""
     },
     {
       "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
       "kind": "StringLiteral",
-      "offset": 340,
-      "length": 32,
-      "value": "\"Please provide a valid API Key\""
+      "offset": 1093,
+      "length": 34,
+      "value": "\"7ousgDHMOZeWcth41qAYaIgF5EwgfwYS\""
     },
     {
       "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
       "kind": "StringLiteral",
-      "offset": 631,
-      "length": 20,
-      "value": "\"Doing some work...\""
+      "offset": 1392,
+      "length": 6,
+      "value": "\"Prod\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1420,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1615,
+      "length": 9,
+      "value": "\"success\""
     }
   ]
 }
