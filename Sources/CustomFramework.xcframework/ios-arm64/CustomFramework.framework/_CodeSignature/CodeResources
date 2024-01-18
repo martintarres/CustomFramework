@@ -16,18 +16,6 @@
 		<data>
 		sDQ084f2d2TnNSBeLJLYe+oF7eo=
 		</data>
-		<key>Frameworks/Pods_CustomFramework.framework/Info.plist</key>
-		<data>
-		1eAwGsBmQs2cL8GIzfrWbU9m0Kc=
-		</data>
-		<key>Frameworks/Pods_CustomFramework.framework/Pods_CustomFramework</key>
-		<data>
-		RfUc5rQ3g1PB9PtiNniMdzPqwiI=
-		</data>
-		<key>Frameworks/Pods_CustomFramework.framework/_CodeSignature/CodeResources</key>
-		<data>
-		L0aw74dqvdAt6xhPpP8Df4c21Ys=
-		</data>
 		<key>Headers/CustomFramework-Swift.h</key>
 		<data>
 		ZlmkssLS7bpaEM+osqiNzDJEbBY=
@@ -42,11 +30,11 @@
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Ow/gY7N9vR4N7WEnokvlvwdQu8o=
+		v4JmW4rWM0UTRNX63lCpveU4aAc=
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		crh0NFvv+8fljxVtJXpk8Z+jT3o=
+		54HoDlZOcmLPhCby9Tm5Cu9+trk=
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -54,11 +42,11 @@
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		crh0NFvv+8fljxVtJXpk8Z+jT3o=
+		54HoDlZOcmLPhCby9Tm5Cu9+trk=
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		pvIdQaKn5QzTKKQxICdiQjJ9+qQ=
+		LZgw0MOqR8N1XE6BFR5qu/2TN40=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,46 +63,6 @@
 		<key>Release_Stage_Environment.plist</key>
 		<data>
 		PtdCZZZfdIO5RPBmB3cnd19z3kc=
-		</data>
-		<key>TututuSDK.bundle/Info.plist</key>
-		<data>
-		BSl4FyOAlIMpBDUsO7vblG6mxYU=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 2.mom</key>
-		<data>
-		Y8bzgLcbAtPGRErRCp6IKHXH+MY=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 3.mom</key>
-		<data>
-		3F+d++6zlqyJXJu8rYJJhi7DSKU=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 4.mom</key>
-		<data>
-		+EJE7k9x5nituvlk9XjE9Gy8aT4=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 5.mom</key>
-		<data>
-		QGax+0tWvZbqmAk6q6+G8SYcyjA=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 6.mom</key>
-		<data>
-		uh7jBGNbbDDMixpNnDqVBRGXpXM=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 7.mom</key>
-		<data>
-		nPLP+sgENVx6z0INCGn+cjGMjNU=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 7.omo</key>
-		<data>
-		7vCQbkmsH3IT167jSEgUK8ZQoNs=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu.mom</key>
-		<data>
-		JIhIXedoYkLz1LObjlvJUEJ6QuI=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/VersionInfo.plist</key>
-		<data>
-		Pf06KYSe2dcMaYOrSFbelDWCMOw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -140,27 +88,6 @@
 			gIQUwjLR4inKzrqPJ106yXhV6GuZFIJ6JiGmsU9E3tA=
 			</data>
 		</dict>
-		<key>Frameworks/Pods_CustomFramework.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6Fw0pPI7pzbarvUM8Pjj5zYHtiNS4xHWarFzOQwmmyo=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_CustomFramework.framework/Pods_CustomFramework</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ma/H9vpTo7XQKSNW0uxpcr59mmHN+R4So2hxpsKcWDg=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_CustomFramework.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			C+VGH1U0RNsaCvlDU/vqTq2rZjZxIt8fofMRzRO4U+M=
-			</data>
-		</dict>
 		<key>Headers/CustomFramework-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -179,14 +106,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l0ajJZVNXnT20Mlfu8sBIybuwJCgKjSJxw4P0VyMJHw=
+			ioyS26OUUbBPsWtKQ9x2jtYhxU/6Omjbj6nQci3C2HI=
 			</data>
 		</dict>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DsZc93iMBQCFZ/3wK78Ak8m04QrGmiZ2AeJSSuNV518=
+			7Y8DeJV2iumywAmOo/A/1ZikQqGHhMPJfow8GTX9Emg=
 			</data>
 		</dict>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -200,14 +127,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DsZc93iMBQCFZ/3wK78Ak8m04QrGmiZ2AeJSSuNV518=
+			7Y8DeJV2iumywAmOo/A/1ZikQqGHhMPJfow8GTX9Emg=
 			</data>
 		</dict>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mbIZPTd7kJszJFzTq87s5LEwmoeqxdwuKz4L3KzTxmQ=
+			UGRguSQD0dqsTTi0kmmuhxG2puaQcHiY0iInqg/ScXI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -236,76 +163,6 @@
 			<key>hash2</key>
 			<data>
 			5AFA7FejJ5z4ofb4O3NCjAoKmsR3SEkHbKK7rzvszkk=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mq5jtHfvgvnMtQzbG2o6V0K+YBC4vQ7FPkrA+vrMeaE=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 2.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3/n0u3mU9Z4jD4qaJRRqNN9hlvbg008d+Ej+wEaF7ew=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 3.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zfg6qfFMkQ4CP2ZlA1gujSPj8aSgYKpAKy3fpp8cczQ=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 4.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XGyGRvkTRgWqITnmiP/rhzy0YePAXe7F9WOPn2J1ayI=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 5.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			STXGKLfEiRcRKiFTf/tmatJxX0Td6Bj1Zb+dDp0jQy0=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 6.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5jqFIRAAn3KEvdbmZewM+biHzWxW6XvGaWzF/XpZwX4=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 7.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fUYTGtdhgEzjZ/je9Z2L2xJBJUnuM1wAOfjURV7IhYs=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 7.omo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tAWydiSlxTmz/TbW//8tjs3cIUydpkwJ+hACzKhV5s0=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8uGPFLE1tT/UskYOqCZx/UZw02s698cHVfGz3hiKl0s=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/VersionInfo.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			w001KiNJ1LeU+DxFLb1hgWVEwy0OlMTiQxlAxos04rs=
 			</data>
 		</dict>
 	</dict>

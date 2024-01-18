@@ -16,18 +16,6 @@
 		<data>
 		sDQ084f2d2TnNSBeLJLYe+oF7eo=
 		</data>
-		<key>Frameworks/Pods_CustomFramework.framework/Info.plist</key>
-		<data>
-		dVmapTwZ3vtxtnfPDVx79l7qVRo=
-		</data>
-		<key>Frameworks/Pods_CustomFramework.framework/Pods_CustomFramework</key>
-		<data>
-		9FOedfrZq/n3OwUf6FOpUoFykAg=
-		</data>
-		<key>Frameworks/Pods_CustomFramework.framework/_CodeSignature/CodeResources</key>
-		<data>
-		yhvnYFZC7E2s53BOQ7KEsWj5QCI=
-		</data>
 		<key>Headers/CustomFramework-Swift.h</key>
 		<data>
 		oIVbNxxPDZbUu+xy4ETFe4FsO9U=
@@ -42,11 +30,11 @@
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ow/gY7N9vR4N7WEnokvlvwdQu8o=
+		v4JmW4rWM0UTRNX63lCpveU4aAc=
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZvApYSttHta+/ANMo+ivh1xRJbc=
+		KXR0tcPWvGShOZgGWVlZ6eKwLgo=
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,19 +42,19 @@
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZvApYSttHta+/ANMo+ivh1xRJbc=
+		KXR0tcPWvGShOZgGWVlZ6eKwLgo=
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		smZfSmcNpdqIYVjXN0urk0XuwPs=
+		j2z16JrF5wp/I1S/sXGpc9OduoA=
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ow/gY7N9vR4N7WEnokvlvwdQu8o=
+		v4JmW4rWM0UTRNX63lCpveU4aAc=
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vkVwiXioQybxfQq08Zpkbwo2B/w=
+		JhT3ahGgfJYPfBFjSPqktqLrM1s=
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,11 +62,11 @@
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vkVwiXioQybxfQq08Zpkbwo2B/w=
+		JhT3ahGgfJYPfBFjSPqktqLrM1s=
 		</data>
 		<key>Modules/CustomFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Mbk4lM8lxv1ycD6T4FuOF9hIw4I=
+		lGR4ARMPBUDQWIvnvDEIc8ezsRA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,46 +83,6 @@
 		<key>Release_Stage_Environment.plist</key>
 		<data>
 		PtdCZZZfdIO5RPBmB3cnd19z3kc=
-		</data>
-		<key>TututuSDK.bundle/Info.plist</key>
-		<data>
-		6zi8IvSQYeGQA41ho218A4nxn5o=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 2.mom</key>
-		<data>
-		Y8bzgLcbAtPGRErRCp6IKHXH+MY=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 3.mom</key>
-		<data>
-		3F+d++6zlqyJXJu8rYJJhi7DSKU=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 4.mom</key>
-		<data>
-		+EJE7k9x5nituvlk9XjE9Gy8aT4=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 5.mom</key>
-		<data>
-		QGax+0tWvZbqmAk6q6+G8SYcyjA=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 6.mom</key>
-		<data>
-		uh7jBGNbbDDMixpNnDqVBRGXpXM=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 7.mom</key>
-		<data>
-		nPLP+sgENVx6z0INCGn+cjGMjNU=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 7.omo</key>
-		<data>
-		7vCQbkmsH3IT167jSEgUK8ZQoNs=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu.mom</key>
-		<data>
-		JIhIXedoYkLz1LObjlvJUEJ6QuI=
-		</data>
-		<key>TututuSDK.bundle/Tututu.momd/VersionInfo.plist</key>
-		<data>
-		Pf06KYSe2dcMaYOrSFbelDWCMOw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -160,27 +108,6 @@
 			gIQUwjLR4inKzrqPJ106yXhV6GuZFIJ6JiGmsU9E3tA=
 			</data>
 		</dict>
-		<key>Frameworks/Pods_CustomFramework.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0x7TSPJ/K4/t7rhNupDsinYp+aSJFeNf/dj3hlyxwzo=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_CustomFramework.framework/Pods_CustomFramework</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vDy99jOE3rZw/v9WiVGVPGvcGQR/4GtdJABWqaX5wn8=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_CustomFramework.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			48qfEMsc9ccWSCA7hGqmJSHs86sWLBh30gdYI2CkE5A=
-			</data>
-		</dict>
 		<key>Headers/CustomFramework-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -199,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l0ajJZVNXnT20Mlfu8sBIybuwJCgKjSJxw4P0VyMJHw=
+			ioyS26OUUbBPsWtKQ9x2jtYhxU/6Omjbj6nQci3C2HI=
 			</data>
 		</dict>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			04NoJsGMgJVYd54z8KCE/ONdfNbQsdwE4CAxqNy40FI=
+			NmNsX+BUMbuabjOc+Lb3s+M/5/Smr61lkfBNlBe5VkM=
 			</data>
 		</dict>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -220,28 +147,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			04NoJsGMgJVYd54z8KCE/ONdfNbQsdwE4CAxqNy40FI=
+			NmNsX+BUMbuabjOc+Lb3s+M/5/Smr61lkfBNlBe5VkM=
 			</data>
 		</dict>
 		<key>Modules/CustomFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e2HMDi5Roc5SuRmC31HwO6HaejDZBPFZuNmnEhcVSy0=
+			lUKZdiyST7DpLvgE8IPHHlJJlC4ZyBrAbHARmbkLMHQ=
 			</data>
 		</dict>
 		<key>Modules/CustomFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l0ajJZVNXnT20Mlfu8sBIybuwJCgKjSJxw4P0VyMJHw=
+			ioyS26OUUbBPsWtKQ9x2jtYhxU/6Omjbj6nQci3C2HI=
 			</data>
 		</dict>
 		<key>Modules/CustomFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZSkaAclaNqN3KgJKbMl85z9Spj0ol28xDn6zGLqMgVY=
+			AnUIKtaNqSYDpV3cMG9xLZMb11Ouac+QikTLK2p3rHY=
 			</data>
 		</dict>
 		<key>Modules/CustomFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -255,14 +182,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZSkaAclaNqN3KgJKbMl85z9Spj0ol28xDn6zGLqMgVY=
+			AnUIKtaNqSYDpV3cMG9xLZMb11Ouac+QikTLK2p3rHY=
 			</data>
 		</dict>
 		<key>Modules/CustomFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tFVrLiDAOECeUgxU1QvOMo59Hng23VaXn4ZsxGTezjo=
+			bGB4vsLnl1qDc9/QuaERa36QTFFQSZGK1j0QdsQ2S/I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -291,76 +218,6 @@
 			<key>hash2</key>
 			<data>
 			5AFA7FejJ5z4ofb4O3NCjAoKmsR3SEkHbKK7rzvszkk=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZE1TTThFQbe5zsnOBco1QKjOfK8vPFykfMTXxvEH1lw=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 2.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3/n0u3mU9Z4jD4qaJRRqNN9hlvbg008d+Ej+wEaF7ew=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 3.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zfg6qfFMkQ4CP2ZlA1gujSPj8aSgYKpAKy3fpp8cczQ=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 4.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XGyGRvkTRgWqITnmiP/rhzy0YePAXe7F9WOPn2J1ayI=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 5.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			STXGKLfEiRcRKiFTf/tmatJxX0Td6Bj1Zb+dDp0jQy0=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 6.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5jqFIRAAn3KEvdbmZewM+biHzWxW6XvGaWzF/XpZwX4=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 7.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fUYTGtdhgEzjZ/je9Z2L2xJBJUnuM1wAOfjURV7IhYs=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu 7.omo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tAWydiSlxTmz/TbW//8tjs3cIUydpkwJ+hACzKhV5s0=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/Tututu.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8uGPFLE1tT/UskYOqCZx/UZw02s698cHVfGz3hiKl0s=
-			</data>
-		</dict>
-		<key>TututuSDK.bundle/Tututu.momd/VersionInfo.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			w001KiNJ1LeU+DxFLb1hgWVEwy0OlMTiQxlAxos04rs=
 			</data>
 		</dict>
 	</dict>

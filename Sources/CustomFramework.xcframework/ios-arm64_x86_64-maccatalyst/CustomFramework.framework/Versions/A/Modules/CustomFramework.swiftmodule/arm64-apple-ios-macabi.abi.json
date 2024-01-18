@@ -16,15 +16,22 @@
       },
       {
         "kind": "Import",
-        "name": "CoreServices_iOS",
-        "printedName": "CoreServices_iOS",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "CustomFramework"
       },
       {
         "kind": "Import",
-        "name": "TututuSDK",
-        "printedName": "TututuSDK",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "CustomFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
         "declKind": "Import",
         "moduleName": "CustomFramework"
       },
@@ -120,7 +127,8 @@
         "mangledName": "$s15CustomFramework3SDKV",
         "moduleName": "CustomFramework",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       }
     ],
@@ -130,37 +138,79 @@
     {
       "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
       "kind": "StringLiteral",
-      "offset": 1028,
-      "length": 37,
-      "value": "\"https:\/\/bephp-dev.tututu.app\/api\/v1\""
+      "offset": 1988,
+      "length": 35,
+      "value": "\"https:\/\/www.ejemplo.com\/api\/datos\""
     },
     {
       "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
       "kind": "StringLiteral",
-      "offset": 1093,
-      "length": 34,
-      "value": "\"7ousgDHMOZeWcth41qAYaIgF5EwgfwYS\""
+      "offset": 2149,
+      "length": 29,
+      "value": "\"Respuesta exitosa: \""
     },
     {
       "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
       "kind": "StringLiteral",
-      "offset": 1392,
-      "length": 6,
-      "value": "\"Prod\""
-    },
-    {
-      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
-      "kind": "StringLiteral",
-      "offset": 1420,
+      "offset": 2177,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
       "kind": "StringLiteral",
-      "offset": 1615,
-      "length": 9,
-      "value": "\"success\""
+      "offset": 2321,
+      "length": 42,
+      "value": "\"Error al realizar la solicitud: \""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2362,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2471,
+      "length": 43,
+      "value": "\"{ \"nombre\": \"Ejemplo\", \"edad\": 25 }\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2551,
+      "length": 8,
+      "value": "\"nombre\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2597,
+      "length": 6,
+      "value": "\"edad\""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2637,
+      "length": 34,
+      "value": "\"Nombre: \""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2655,
+      "length": 1,
+      "value": "\", Edad: \""
+    },
+    {
+      "filePath": "\/Users\/martintarres\/Documents\/proyectosiOS\/Frameworks\/CustomFramework\/CustomFramework\/SDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2670,
+      "length": 2,
+      "value": "\"\""
     }
   ]
 }
