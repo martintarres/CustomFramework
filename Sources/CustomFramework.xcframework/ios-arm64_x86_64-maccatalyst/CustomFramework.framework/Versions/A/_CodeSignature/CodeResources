@@ -35,6 +35,15 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/Pods_CustomFramework.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			TF95bDN4K2yp/wkVndOJZxgbTeY=
+			</data>
+			<key>requirement</key>
+			<string>identifier "org.cocoapods.Pods-CustomFramework" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Sebastian Pons (M38NDCPK6T)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+		</dict>
 		<key>Headers/CustomFramework-Swift.h</key>
 		<dict>
 			<key>hash2</key>

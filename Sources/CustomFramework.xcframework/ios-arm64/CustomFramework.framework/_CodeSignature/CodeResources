@@ -16,6 +16,18 @@
 		<data>
 		sDQ084f2d2TnNSBeLJLYe+oF7eo=
 		</data>
+		<key>Frameworks/Pods_CustomFramework.framework/Info.plist</key>
+		<data>
+		CQXulFdXcWQ+f2nUfDz8Tgu5NCE=
+		</data>
+		<key>Frameworks/Pods_CustomFramework.framework/Pods_CustomFramework</key>
+		<data>
+		Ot8aufLvs3LC1u+hOMAsrmP99jg=
+		</data>
+		<key>Frameworks/Pods_CustomFramework.framework/_CodeSignature/CodeResources</key>
+		<data>
+		kuWgDECeabroKXcFnvt3b+CXJGQ=
+		</data>
 		<key>Headers/CustomFramework-Swift.h</key>
 		<data>
 		ZlmkssLS7bpaEM+osqiNzDJEbBY=
@@ -86,6 +98,27 @@
 			<key>hash2</key>
 			<data>
 			gIQUwjLR4inKzrqPJ106yXhV6GuZFIJ6JiGmsU9E3tA=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_CustomFramework.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ed6AKTV06qqKRGMUNGlZAfDLfxVOzum+CQQzahuskiA=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_CustomFramework.framework/Pods_CustomFramework</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4w9c5uZSgG7wohLZvp7Hp5H0K5x6C7T4HWUX1SwICVM=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_CustomFramework.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pkqdf5TcPc7ce8duqtBWlf9W1j0KwVoN9g6V/6+MG2Y=
 			</data>
 		</dict>
 		<key>Headers/CustomFramework-Swift.h</key>
